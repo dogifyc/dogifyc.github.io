@@ -3,6 +3,8 @@ title: Layui 自定义打印
 date: 2024-03-16 21:52:05
 tags:
   - Layui
+categories:
+  - js
 ---
 
 # 基础应用
