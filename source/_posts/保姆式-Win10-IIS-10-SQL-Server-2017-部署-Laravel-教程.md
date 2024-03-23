@@ -34,54 +34,54 @@ categories:
 
 ## 安装 IIS 10
 1. 点击开始-服务器管理器
-![install-iis-01.png](https://chenlijun.com/usr/uploads/2020/03/4228691737.png)
+{% asset_img iis-01.png "安装iis-01" %}
 2. 点击添加角色和功能
-![install-iis-02.png](https://chenlijun.com/usr/uploads/2020/03/1219185588.png)
+{% asset_img iis-02.png "安装iis-02" %}
 3. 点击下一步
-![install-iis-03.png](https://chenlijun.com/usr/uploads/2020/03/3501490930.png)
+{% asset_img iis-03.png "安装iis-03" %}
 4. 选择基于角色或基于功能的安装，点击下一步
-![install-iis-04.png](https://chenlijun.com/usr/uploads/2020/03/67576602.png)
+{% asset_img iis-04.png "安装iis-04" %}
 5. 选择服务器，点击下一步
-![install-iis-05.png](https://chenlijun.com/usr/uploads/2020/03/3493739113.png)
+{% asset_img iis-05.png "安装iis-05" %}
 6. 勾选 Web 服务器(IIS)
-![install-iis-06.png](https://chenlijun.com/usr/uploads/2020/03/598145813.png)
+{% asset_img iis-06.png "安装iis-06" %}
 7. 弹出如图所示对话框，点击添加功能
-![install-iis-07.png](https://chenlijun.com/usr/uploads/2020/03/3295301337.png)
+{% asset_img iis-07.png "安装iis-07" %}
 8. 点击下一步
-![install-iis-08.png](https://chenlijun.com/usr/uploads/2020/03/917935682.png)
+{% asset_img iis-08.png "安装iis-08" %}
 9. 再点下一步
-![install-iis-09.png](https://chenlijun.com/usr/uploads/2020/03/969053236.png)
+{% asset_img iis-09.png "安装iis-09" %}
 10. 再点下一步
-![install-iis-10.png](https://chenlijun.com/usr/uploads/2020/03/693675246.png)
-12. 最后，点击安装
-![install-iis-12.png](https://chenlijun.com/usr/uploads/2020/03/3689811225.png)
-14. 等待安装，安装完成后，关闭安装向导
-![install-iis-14.png](https://chenlijun.com/usr/uploads/2020/03/1732699476.png)
-1.  启用CGI与fastCGI扩展
+{% asset_img iis-10.png "安装iis-10" %}
+11. 最后，点击安装
+{% asset_img iis-11.png "安装iis-11" %}
+12. 等待安装，安装完成后，关闭安装向导
+{% asset_img iis-12.png "安装iis-12" %}
+13.  启用CGI与fastCGI扩展
 IIS 并不能理解php代码，他需要通过CGI或fastCGI将代码转发，然后获取执行结果。
 	1. 在服务器管理器的菜单项中点击管理-添加角色和功能
-	![install-iis-15.png](https://chenlijun.com/usr/uploads/2020/03/2373795247.png)
+	{% asset_img iis-13-1.png "安装iis-13-1" %}
 	2. 打开对话框后，一直下一步到服务器角色菜单项，依次展开Web服务器(IIS)，Web服务器，应用程序开发，勾选CGI。
-	![install-iis-16.png](https://chenlijun.com/usr/uploads/2020/03/2046959120.png)
+	{% asset_img iis-13-2.png "安装iis-13-2" %}
 	3. 一直点击下一步，等待安装完成
-	![install-iis-17.png](https://chenlijun.com/usr/uploads/2020/03/2026349333.png)
-16. CGI 安装完成后，需要重启一下IIS（也可以和下一步合并）
+	{% asset_img iis-13-3.png "安装iis-13-3" %}
+14. CGI 安装完成后，需要重启一下IIS（也可以和下一步合并）
 	1. 打开 IIS 管理器
 	方式一：开始-Windows 管理工具-IIS 管理器
-	![install-iis-15-1.png](https://chenlijun.com/usr/uploads/2020/03/2804544865.png)
+	{% asset_img iis-14-1-1.png "安装iis-14-1-1" %}
 	方式二：点击搜索-输入IIS
-	![install-iis-15-2.png](https://chenlijun.com/usr/uploads/2020/03/3489344981.png)
+	{% asset_img iis-14-1-2.png "安装iis-14-1-2" %}
 	2. 选中服务器，点击重新重启
-	![install-iis-18.png](https://chenlijun.com/usr/uploads/2020/03/3942404755.png)
-17. 添加url重写(rewrite)模块，IIS 10 默认不带此扩展，因此需要手动安装。
+	{% asset_img iis-14-1-3.png "安装iis-14-1-3" %}
+15. 添加url重写(rewrite)模块，IIS 10 默认不带此扩展，因此需要手动安装。
 	1. 从[官网](https://www.iis.net/downloads/microsoft/url-rewrite "官网")下载扩展安装程序
 	2. 打开安装程序，点击安装
-	![install_iis_19.png](https://chenlijun.com/usr/uploads/2020/03/599280732.png)
+	{% asset_img iis-15-1.png "安装iis-15-1" %}
 	3. 选择我接受，然后等待安装完成
-	![install-iis-20.png](https://chenlijun.com/usr/uploads/2020/03/2788565187.png)
+	{% asset_img iis-15-2.png "安装iis-15-2" %}
 	4. 安装完成后退出安装程序
 	5. 点击IIS管理器右上角的x，彻底退出后，再次打开管理器，选择服务器后，就可以看到中间的Url重写功能了。
-	![install-iis-21.png](https://chenlijun.com/usr/uploads/2020/03/2116514974.png)
+	{% asset_img iis-15-3.png "安装iis-15-3" %}
 
 ## 安装PHP
 ### 下载PHP
@@ -114,9 +114,9 @@ extension_dir = "ext" ;将这行前面的分号去掉
 ### 添加 SQL server 扩展
 因为数据库采用SQL Server，所以需要添加扩展。
 1. 从微软网站上[下载](https://go.microsoft.com/fwlink/?linkid=2120362 "下载")扩展包安装程序后打开，选个地方解压，如C:\ext。
-![install-php-01.png](https://chenlijun.com/usr/uploads/2020/03/2090106342.png)
+{% asset_img php-01.png "安装php-01" %}
 2. 解压后获得如下文件列表
-![install-php-02.png](https://chenlijun.com/usr/uploads/2020/03/2707627912.png)
+{% asset_img php-02.png "安装php-02" %}
 因为我本地安装的php版本是7.2 nts 64位，所以将php_pdo_sqlsrv_72_nts_x64.dll复制到php安装目录下的ext目录中，并重命名为php_pdo_sqlsrv.dll。
 这一步请根据自己安装的php版本选择拷贝对应的扩展文件，如果你安装的php版本过低，请选择下载[历史版本](https://docs.microsoft.com/zh-cn/sql/connect/php/release-notes-php-sql-driver?view=sql-server-ver15#previous-releases "历史版本")的扩展包。
 3. 在上一步的php.ini配置文件中添加一项配置，如配置php.ini小结最后一行的代码所示。
@@ -131,18 +131,18 @@ extension_dir = "ext" ;将这行前面的分号去掉
 1. 变量值填入C:\php7.2\extras\ssl\openssl.cnf，这个路径需要根据你php的安装目录调整。
 1. 逐级点击确定
 具体操作可以参考下图：
-![install-php-03.png](https://chenlijun.com/usr/uploads/2020/03/3349906342.png)
+{% asset_img php-03.png "安装php-03" %}
 1. **变量生效需要系统重启，但可以等后面安装全部完成后统一重启**
 
 ## 安装composer
 发布的源码并不携带依赖包，所以用它来安装依赖项。
 1. 下载 [windows 安装包](https://getcomposer.org/Composer-Setup.exe "windows 安装包")
 2. 运行安装包，选择为所有用户安装
-![install-composer-01.png](https://chenlijun.com/usr/uploads/2020/03/4137860733.png)
+{% asset_img composer-01.png "安装composer-01" %}
 2. 点击下一步
-![install-composer-02.png](https://chenlijun.com/usr/uploads/2020/03/2682482199.png)
+{% asset_img composer-02.png "安装composer-02" %}
 3. 选择php的安装目录
-![install-composer-03.png](https://chenlijun.com/usr/uploads/2020/03/3031044638.png)
+{% asset_img composer-03.png "安装composer-03" %}
 4. 一路下一步，完成安装
 5. 配置 composer 全局使用阿里云镜像，加速下载
 ```
@@ -151,64 +151,64 @@ composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 ## 安装Redis
 1. 从[github](https://github.com/microsoftarchive/redis/releases "github")下载windows版本的redis安装包
 2. 双击打开安装包
-![install-redis-01.png](https://chenlijun.com/usr/uploads/2020/03/561271387.png)
+{% asset_img redis-01.png "安装redis-01" %}
 3. 接受协议，点击下一步
-![install-redis-02.png](https://chenlijun.com/usr/uploads/2020/03/1697638377.png)
+{% asset_img redis-02.png "安装redis-02" %}
 4. 选择安装路径，点击下一步
-![install-redis-03.png](https://chenlijun.com/usr/uploads/2020/03/2494113392.png)
+{% asset_img redis-03.png "安装redis-03" %}
 5. 选择redis运行端口（这里采用默认端口），并勾选允许redis通过防火墙，点击下一步
-![install-redis-04.png](https://chenlijun.com/usr/uploads/2020/03/963779662.png)
-1. 配置redis最大使用内存，这里抱持默认配置，不限制，点击下一步
-![install-redis-05.png](https://chenlijun.com/usr/uploads/2020/03/3174737001.png)
-1. 点击下一步开始安装
-![install-redis-06.png](https://chenlijun.com/usr/uploads/2020/03/1791481284.png)
-1. 安装完成后点击结束，完成安装
+{% asset_img redis-04.png "安装redis-04" %}
+6. 配置redis最大使用内存，这里抱持默认配置，不限制，点击下一步
+{% asset_img redis-05.png "安装redis-05" %}
+7. 点击下一步开始安装
+{% asset_img redis-06.png "安装redis-06" %}
+8. 安装完成后点击结束，完成安装
 
 ## 安装SQL Server
 SQL Server 有很多版本，我选用了适合小型站点的免费版本-Express。
 1. [下载安装包](https://go.microsoft.com/fwlink/?linkid=866658 "下载")
 2. 打开下载的安装程序，点击基本安装
-![install-sqlserver-01.png](https://chenlijun.com/usr/uploads/2020/03/2617352243.png)
+{% asset_img sql-server-01.png "安装sql-server-01" %}
 3. 点击接受协议
-![install-sqlserver-02.png](https://chenlijun.com/usr/uploads/2020/03/1716980621.png)
+{% asset_img sql-server-02.png "安装sql-server-02" %}
 4. 选个风水宝地（或直接用默认路径），然后点安装
-![install-sqlserver-03.png](https://chenlijun.com/usr/uploads/2020/03/2511441359.png)
+{% asset_img sql-server-03.png "安装sql-server-03" %}
 5. 泡杯枸杞，边养生边等安装，安装完后展示如下页面
-![install-sqlserver-04.png](https://chenlijun.com/usr/uploads/2020/03/245065774.png)
+{% asset_img sql-server-04.png "安装sql-server-04" %}
 6. 点击关闭退出
 
 ## 安装SSMI（可视化数据库管理工具）
 0. 如果数据库已存在，你可以让管理员只给帮你新建一个数据库，并给你一个连接用的账号密码
 1. 下载安装程序
 2. 打开安装程序，点击install
-![install-sqlserver-05.png](https://chenlijun.com/usr/uploads/2020/03/1687724530.png)
+{% asset_img sql-server-05.png "安装sql-server-05" %}
 3. 一路下一步，安装完成后提示需要重启操作系统完成安装，点击重启。
-![install-sqlserver-06.png](https://chenlijun.com/usr/uploads/2020/03/619442740.png)
+{% asset_img sql-server-06.png "安装sql-server-06" %}
 4. 开始菜单打开刚安装的管理工具，连接方式选择Windows 认证，点击连接(Connect)
-![install-ssmi-01.png](https://chenlijun.com/usr/uploads/2020/03/12700406.png)
+{% asset_img sql-server-07.png "安装sql-server-07" %}
 5. 在左侧数据库上右键，新建数据库
-![install-ssmi-02.png](https://chenlijun.com/usr/uploads/2020/03/3343510415.png)
+{% asset_img sql-server-08.png "安装sql-server-08" %}
 6. 填写数据库名称，点击确定
-![install-ssmi-03.png](https://chenlijun.com/usr/uploads/2020/03/1120047302.png)
+{% asset_img sql-server-09.png "安装sql-server-09" %}
 7. 在左侧依次展开安全性-登陆名，在用户sa上右键，属性
-![install-ssmi-04.png](https://chenlijun.com/usr/uploads/2020/03/4161148525.png)
-8. 输入两边密码，修改当前的默认密码
-![install-ssmi-05.png](https://chenlijun.com/usr/uploads/2020/03/4293188312.png)
+{% asset_img sql-server-10.png "安装sql-server-10" %}
+8. 输入两遍密码，修改当前的默认密码
+{% asset_img sql-server-11.png "安装sql-server-11" %}
 9. 再点击左侧的状态，允许sa用户登录，点击确认
-![install-ssmi-06.png](https://chenlijun.com/usr/uploads/2020/03/3572877470.png)
+{% asset_img sql-server-12.png "安装sql-server-12" %}
 10. 在左侧数据库上右键，属性
-![install-ssmi-07.png](https://chenlijun.com/usr/uploads/2020/03/3163236334.png)
+{% asset_img sql-server-13.png "安装sql-server-13" %}
 11. 左侧选中安全性，右侧选中SQL Server和Windows身份验证模式，点击确定
-![install-ssmi-08.png](https://chenlijun.com/usr/uploads/2020/03/815454209.png)
+{% asset_img sql-server-14.png "安装sql-server-14" %}
 12. 点击开始，打开SQL Server 配置管理器
-![install-ssmi-09.png](https://chenlijun.com/usr/uploads/2020/03/1950380249.png)
+{% asset_img sql-server-15.png "安装sql-server-15" %}
 11. 左侧选中MSSQLSERVER的协议，在右侧的TCP/IP上右键，点击启用
-![install-ssmi-10.png](https://chenlijun.com/usr/uploads/2020/03/1777519581.png)
+{% asset_img sql-server-16.png "安装sql-server-16" %}
 12. 会看到如下提示，点击确定关闭它
-![install-ssmi-11.png](https://chenlijun.com/usr/uploads/2020/03/1482576974.png)
+{% asset_img sql-server-17.png "安装sql-server-17" %}
 13. 点击左侧的SQL Server服务，在右侧的 SQL Server (MSSQLSERVER)上右键，点击重新启动
-![install-ssmi-12.png](https://chenlijun.com/usr/uploads/2020/03/3614743299.png)
-1. 至此应该可以用sa账号和修改后的密码登陆数据库了，如果你觉得直接用sa账号权限过大，可以选择新建一个数据库账号，并为此账号授予上面创建的数据库的权限。具体操作请google一下。
+{% asset_img sql-server-18.png "安装sql-server-18" %}
+14. 至此应该可以用sa账号和修改后的密码登陆数据库了，如果你觉得直接用sa账号权限过大，可以选择新建一个数据库账号，并为此账号授予上面创建的数据库的权限。具体操作请google一下。
 
 这个玩意非常吃性能，我测试用的阿里云1核2G卡的一匹，不得不感叹一句，用Windows服务器的都是老板啊。
 
@@ -216,50 +216,50 @@ SQL Server 有很多版本，我选用了适合小型站点的免费版本-Expre
 因为项目采用的是前后端分离的方式开发的，所以创建了两个站点。一个前端，一个后端。
 
 ## 配置后端站点
-0. Laravel 站点依赖服务器的url重写功能，而Laravel项目的public目录中已默认提供一个web.config配置文件，后续操作的模块映射和默认文档都会体现在默认配置文件上。
-1. 按照前文所述的方式打开IIS，在左侧选择服务器，然后展开站点，在网站菜单上右键，添加站点。
-![add_site_fe_01.png](https://chenlijun.com/usr/uploads/2020/03/2636506236.png)
+1. Laravel 站点依赖服务器的url重写功能，而Laravel项目的public目录中已默认提供一个web.config配置文件，后续操作的模块映射和默认文档都会体现在默认配置文件上。
+2. 按照前文所述的方式打开IIS，在左侧选择服务器，然后展开站点，在网站菜单上右键，添加站点。
+{% asset_img config-site-01.png "安装config-site-01" %}
 2. 在弹出对话框中输入站点名称，网站物理路径和域名，最后点击确定创建站点
-![add_site_fe_02.png](https://chenlijun.com/usr/uploads/2020/03/3823486944.png)
+{% asset_img config-site-02.png "安装config-site-02" %}
 4. 单击刚创建的站点，在中间双击打开处理程序映射
-![add_site_fe_03.png](https://chenlijun.com/usr/uploads/2020/03/3909166300.png)
+{% asset_img config-site-03.png "安装config-site-03" %}
 5. 点击右侧的添加模块映射
-![add_site_fe_04.png](https://chenlijun.com/usr/uploads/2020/03/1420251131.png)
+{% asset_img config-site-04.png "安装config-site-04" %}
 6. 按下图配置，第三步选择可执行文件时，默认仅显示.dll的文件，需要手动改成.exe，才能找到php-cgi.exe
-![add_site_fe_06.png](https://chenlijun.com/usr/uploads/2020/03/297277552.png)
+{% asset_img config-site-05.png "安装config-site-05" %}
 7. 点击确定时会弹出如下对话框，请选择是
-![add_site_fe_07.png](https://chenlijun.com/usr/uploads/2020/03/1878798261.png)
+{% asset_img config-site-06.png "安装config-site-06" %}
 8. 再在左侧点击当前站点，在中间双击打开默认文档
-![add_site_fe_08.png](https://chenlijun.com/usr/uploads/2020/03/2607627079.png)
+{% asset_img config-site-07.png "安装config-site-07" %}
 9. 进入如下页面，在右侧点击添加，输入index.php，点击确认
-![add_site_fe_09.png](https://chenlijun.com/usr/uploads/2020/03/1054952558.png)
+{% asset_img config-site-08.png "安装config-site-08" %}
 10. 授予IIS项目目录权限
 	1. 在项目所在目录的上一级目录上右键-属性
-	![add_site_fe_14.png](https://chenlijun.com/usr/uploads/2020/03/2214488603.png)
+	{% asset_img config-site-09.png "安装config-site-09" %}
 	1. 点击安全选项卡，点击编辑
-	![add_site_fe_15.png](https://chenlijun.com/usr/uploads/2020/03/282897080.png)
+	{% asset_img config-site-10.png "安装config-site-10" %}
 	1. 再点击添加
-	![add_site_fe_16.png](https://chenlijun.com/usr/uploads/2020/03/1263366631.png)
+	{% asset_img config-site-11.png "安装config-site-11" %}
 	1. 点击高级
-	![add_site_fe_17.png](https://chenlijun.com/usr/uploads/2020/03/1291902903.png)
+	{% asset_img config-site-12.png "安装config-site-12" %}
 	1. 点击立即查找，双击选中用户IIS_IUSERS
-	![add_site_fe_18.png](https://chenlijun.com/usr/uploads/2020/03/2410533883.png)
+	{% asset_img config-site-13.png "安装config-site-13" %}
 	1. 点击确定
-	![add_site_fe_19.png](https://chenlijun.com/usr/uploads/2020/03/2887660283.png)
+	{% asset_img config-site-14.png "安装config-site-14" %}
 	1. 赋予所有权限，点击确定
-	![add_site_fe_20.png](https://chenlijun.com/usr/uploads/2020/03/1797509765.png)
+	{% asset_img config-site-15.png "安装config-site-15" %}
 	1. 再点击确定
-	![add_site_fe_21.png](https://chenlijun.com/usr/uploads/2020/03/627787676.png)
+	{% asset_img config-site-16.png "安装config-site-16" %}
 	1. 重复上面步骤，为IUSER也提供完全权限
 11. 打开项目文件所在目录，复制.env.example，重命名为.env，打开编辑，如下图所示
-	![add_site_fe_12.png](https://chenlijun.com/usr/uploads/2020/03/183325214.png)
+	{% asset_img config-site-17.png "安装config-site-17" %}
 12. composer安装项目依赖
 	1. 在站点目录空白处按住Shift同时点击右键，点击在此处打开 PowerShell 窗口。
-	![add_site_fe_10.png](https://chenlijun.com/usr/uploads/2020/03/3542630571.png)
+	{% asset_img config-site-18.png "安装config-site-18" %}
 	2. 执行composer install安装项目依赖
-	![add_site_fe_11.png](https://chenlijun.com/usr/uploads/2020/03/90000590.png)
+	{% asset_img config-site-19.png "安装config-site-19" %}
 	3. 执行php .\artisan key:generate 生成加密key
-	![add_site_fe_13.png](https://chenlijun.com/usr/uploads/2020/03/1734028954.png)
+	{% asset_img config-site-20.png "安装config-site-20" %}
 	4. 执行php .\artisan migrate:refresh --seed 生成数据库结构，并填充基础数据
 	5. 指定php .\artisan storage:link 创建public\storage\ 到 storage\app\public 的快捷方式
 
@@ -279,11 +279,11 @@ SQL Server 有很多版本，我选用了适合小型站点的免费版本-Expre
 而我们现在的服务器是IIS，上面的重写规则是针对Apache的，所以我们需要在IIS中导入此规则。
 
 1. IIS管理器中选中前端站点，双击打开url重写
-![add_site_fe_22.png](https://chenlijun.com/usr/uploads/2020/03/862876512.png)
+{% asset_img config-site-21.png "安装config-site-21" %}
 2. 点击右侧的导入规则
-![add_site_fe_23.png](https://chenlijun.com/usr/uploads/2020/03/4285019925.png)
+{% asset_img config-site-22.png "安装config-site-22" %}
 3. 将上面的Apache重写规则粘贴在重写规则区域，点击右上角的应用
-![add_site_fe_24.png](https://chenlijun.com/usr/uploads/2020/03/2318009505.png)
+{% asset_img config-site-23.png "安装config-site-23" %}
 
 ## SQL Server 查询总是返回字符串类型
 项目上线后发现数据库中定义为 int 类型的字段，查询返回的永远都是字符串，这使得用 vue 架构的前端需要增加额外的适配工作。
@@ -311,4 +311,4 @@ SQL Server 有很多版本，我选用了适合小型站点的免费版本-Expre
 ```
 
 # 完
-![add_site_fe_25.png](https://chenlijun.com/usr/uploads/2020/03/2768838995.png)
+{% asset_img config-site-24.png "安装config-site-24" %}
